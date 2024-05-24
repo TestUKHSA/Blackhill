@@ -23,7 +23,8 @@
 		<div class="collapse navbar-collapse" id="navbarNavDropdown"> 
 			<ul class="navbar-nav">
 				<li class="nav-item"> <a class="nav-link" href="index.htm">Home</a> </li> 
-				<li class="nav-item"> <a class="nav-link" href="Volunteer or Join.htm">Volunteer or Join</a> </li> 
+				<li class="nav-item"> <a class="nav-link" href="Volunteer.htm">Volunteer</a> </li> 
+				<li class="nav-item"> <a class="nav-link" href="Volunteer or Join.htm">Join</a> </li> 				
 				<li class="nav-item"> <a class="active nav-link" aria-current="page" href="#">Resources &#38 Links</a> </li> 
 			</ul> 
 		</li>
@@ -88,9 +89,17 @@ Easy Fundraising works with many only online retailers via: www.easyfundraising.
 		</script>
 	  </div>
 	  <div class="col">
-		<input type="submit" onClick="LinkVolJoin()" value="Volunteer or Join" class="btn btn-primary" style="width:100%">
+		<input type="submit" onClick="LinkVol()" value="Volunteer" class="btn btn-primary" style="width:100%;background-color: #ff6a06; border-color: #ff6a06;">
 		<script> 
-			function LinkVolJoin() {
+			function LinkVol() {
+				window.location.href = "Volunteer.htm";
+			}
+		</script>
+	  </div>	  
+	  <div class="col">
+		<input type="submit" onClick="LinkJoin()" value="Join" class="btn btn-primary" style="width:100%;background-color: #c5e707; border-color: #c5e707;">
+		<script> 
+			function LinkJoin() {
 				window.location.href = "Volunteer or Join.htm";
 			}
 		</script>
